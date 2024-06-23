@@ -1,0 +1,54 @@
+@import 'vars';
+
+$widthSite: 1200px;
+$colorText: #8A2BE2;
+$gapGrid: 16px;
+$border: 1px solid #000;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+@mixin center() {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+%font_normal {
+   font-family: sans-serif;
+   font-weight: normal;
+}
+
+
+
+//стили для текста
+
+.color-text {
+   color: $colorText;
+}
+
+nav {
+   display: flex;
+   gap: $gapGrid;
+
+   &__link {
+      text-decoration: none;
+      @extend %font_normal;
+   }
+}
+
+.content {
+   display: flex;
+   width: $widthSite;
+   gap: 16px;
+   @include center();
+
+   &__item {
+      width: $widthSite / 4;
+      border: $border;
+      height: 200px;
+   }
+}

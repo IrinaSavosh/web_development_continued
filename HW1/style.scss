@@ -1,0 +1,262 @@
+@import './vars';
+@import './mixins';
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+
+body {
+   scroll-behavior: smooth;
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+
+.center {
+   padding-left: calc(50% - $widthSite / 2);
+   padding-right: calc(50% - $widthSite / 2);
+}
+
+.header {
+   background-color: $backBlock;
+   display: flex;
+   justify-content: space-between;
+
+   &__block_left {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+
+   &__block_right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      img {
+         background-color: $backBlock;
+      }
+   }
+
+}
+
+.main_section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(241, 228, 230);
+
+   img {
+      width: $halfSite;
+   }
+
+   &__text_decoration {
+      width: $halfSite;
+      border: solid;
+      border-width: 0 0 0 12px;
+      border-color: $colorSelectSite;
+      margin-left: 64px;
+      padding: 8px;
+
+      h2 {
+         font-family: Lato;
+         font-size: 48px;
+         font-weight: 900;
+         color: rgb(34, 34, 34);
+         line-height: 1;
+      }
+
+      &__bold_type {
+         font-family: Lato;
+         font-size: 32px;
+         font-weight: 700;
+         color: rgb(34, 34, 34);
+      }
+
+      &__select_text_color {
+         font-family: Lato;
+         font-size: 32px;
+         font-weight: 700;
+         color: $colorSelectSite;
+
+      }
+   }
+
+
+}
+
+.product-box {
+   @include centerflex();
+   gap: $gapGrid;
+}
+
+%flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+
+.categories {
+   margin-top: 64px;
+}
+
+.items {
+   position: relative;
+}
+
+.item:nth-of-type(2) {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+}
+
+
+
+.item p {
+   margin-bottom: 2px;
+   font-family: Lato;
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+   color: rgb(255, 255, 255);
+}
+
+.item h2 {
+   font-family: Lato;
+   font-size: 24px;
+   font-weight: 700;
+   color: rgb(241, 109, 127);
+}
+
+.eclipse {
+   position: relative;
+
+   &__filter {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(33, 22, 22);
+      opacity: 0.7;
+   }
+}
+
+.title {
+   color: rgb(34, 34, 34);
+   font-family: Lato;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 36px;
+   text-align: center;
+   margin-top: 96px;
+   margin-bottom: 6px;
+}
+
+.description {
+   color: rgb(159, 159, 159);
+   font-family: Lato;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 17px;
+   text-align: center;
+   margin-bottom: 48px;
+}
+
+.product {
+   width: $thirdSite;
+   display: flex;
+   flex-direction: column;
+   font-family: Lato;
+
+   &__img {
+      width: 100%;
+
+   }
+
+   &__content {
+      background-color: #F8F8F8;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+   }
+
+   &__name {
+      // font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: $colorText;
+   }
+
+   &__text {
+      // font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: $colorText;
+   }
+
+   &__price {
+      // font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: $colorSelectSite;
+   }
+}
+
+.boxes-of-advantages {
+   background-color: $backBlock;
+   padding: 104px 230px;
+
+   &__box {
+      width: $thirdSite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+         margin-bottom: 28px;
+      }
+
+      h2 {
+         color: rgb(251, 251, 251);
+         font-family: Lato;
+         font-size: 19.96px;
+         font-weight: 400;
+         line-height: 24px;
+         margin-bottom: 16px;
+      }
+      p{
+         color: rgb(251, 251, 251);
+         font-family: Lato;
+         font-size: 13.97px;
+         font-weight: 300;
+         line-height: 17px;
+         text-align: center;
+         padding: 0 25px;
+    }
+   }
+}
