@@ -46,7 +46,7 @@ a {
       align-items: center;
       gap: 32px;
 
-      button{
+      button {
          border: none;
       }
 
@@ -226,8 +226,10 @@ a {
       color: $colorSelectSite;
    }
 }
+
 .hidden {
    padding-bottom: 70.52px;
+
    &__btn_down {
       display: flex;
       color: $colorSelectSite;
@@ -240,7 +242,7 @@ a {
       border-color: $colorSelectSite;
       background: rgb(255, 255, 255);
    }
-   
+
    &__btn_down:hover {
       color: rgb(255, 255, 255);
       background: $colorSelectSite;
@@ -332,7 +334,7 @@ a {
       }
 
       h4 {
-         color:$colorText;
+         color: $colorText;
          font-family: Lato;
          font-size: 18px;
          font-weight: 400;

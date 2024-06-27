@@ -1,44 +1,42 @@
-@import 'vars';
-@import 'mixins';
+@import './vars';
+@import './mixins';
 
-$thirdSite: (
-   $widthSite - $gapGrid) / 3;
+// %flex {
+//    display: flex;
+//    flex-wrap: wrap;
+// }
 
-* {
+$thirdSite: calc(($widthSite - $gapGrid * 2) / 3);
+
+*{
    margin: 0;
    padding: 0;
 }
 
-body {
+body{
    font-family: Lato, sans-serif;
 }
-
-a {
+a{
    text-decoration: none;
 }
 
-
-
-.center {
-   padding-left: calc(50% - $widthSite / 2);
-padding-right: calc (50% - $widthSite / 2);
-
+.center{
+   padding-left: calc(50% - 570);
+   padding-right: calc(50% - 570);
 }
 
 .product-box {
-   @include centerflex();
+   @include centerFlex();
+   gap: $gapGrid;
 }
 
-%flex {
-   display: flex;
-   flex-wrap: wrap;
-}
+
 
 .product {
    width: $thirdSite;
    display: flex;
    flex-direction: column;
-
+   
    &__img {
       width: 100%;
 
@@ -82,7 +80,7 @@ padding-right: calc (50% - $widthSite / 2);
    background-color: $backBlock;
    padding-top: 20px;
    padding-bottom: 20px;
-   @extend %flex;
+   // @extend %flex;
 }
 
 .header_left {
@@ -108,7 +106,7 @@ padding-right: calc (50% - $widthSite / 2);
    color: $colorSelectSite;
 }
 
-.breadcrums_link {
+.breadcrumbs_link {
    font-style: normal;
    font-weight: 300;
    font-size: 14px;
