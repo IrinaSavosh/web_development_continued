@@ -1,0 +1,25 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+summary{
+   display: block;
+   // color: blue;   --для первого задания
+}
+
+summary::-webkit-details-marker{
+   display: none;
+}
+// summary::before{   --для первого задания
+//    content: '\2192';   --для первого задания
+//    padding-right: 5em;   --для первого задания
+// }   --для первого задания
+// details[open]>summary::before{   --для первого задания
+//    content: '\2193';   --для первого задания
+// }   --для первого задания
+
+.my-height{
+   height: 50px;
+   padding: 20px 0;
+}

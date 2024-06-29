@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.my-height {
+  height: 50px;
+  padding: 20px 0;
+}/*# sourceMappingURL=style.css.map */
