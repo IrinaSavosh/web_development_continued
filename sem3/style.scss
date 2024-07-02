@@ -1,0 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+
+body {
+   font-family: sans-serif;
+}
+
+.center {
+   padding-left: calc(50% - 570px);
+   padding-right: calc(50% - 570px);
+
+}
+
+.title {
+   font-family: 'bungee_spiceregular';
+   border: 30px solid #40c4c8;
+   padding: 20px;
+   border-image: url(./fonts/css_border-image-1.png) 30 round round;
+}
+
+.text {
+   font-family: 'ga_maamliregular';
+   padding: 1rem;
+   // color: white;
+   border-width: 3px;
+   border-style: solid;
+   border-image:
+      linear-gradient(to bottom,
+         red,
+         rgba(0, 0, 0, 0)) 1 100%;
+   margin: 1em;
+}
+
+.heading {
+
+   color: transparent;
+
+   -webkit-text-stroke: 1px blue;
+   font-size: 56px;
+
+}
+
+.box {
+   width: 0;
+   height: 0;
+   border: 0 solid transparent;
+   border-bottom-width: 100px;
+   border-top-width: 100px;
+   border-left: 173px solid black;
+}
+
+.breadcrumb {
+   background: #F8F3F4;
+   height: 148px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__heading {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
+   }
+
+   
+
+   &__link {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration: none;
+      color: #636363;
+      &:hover{
+         color: #F16D7F;
+      }
+   }
+
+   &__links{
+      display: flex;
+
+   }
+
+   &__box:last-of-type .breadcrumb__link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #F16D7F;
+   }
+
+   &__box:not(:last-child)::after {
+      content: '/';
+padding-left: 8px;
+padding-right: 8px;
+   }
+}
