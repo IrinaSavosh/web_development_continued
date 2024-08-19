@@ -12,16 +12,10 @@ body {
 img {
   display: block;
   max-width: 100%;
-  cursor: pointer;
 }
 
 a {
   text-decoration: none;
-}
-
-button {
-  border: none;
-  cursor: pointer;
 }
 
 .center {
@@ -46,6 +40,9 @@ button {
   align-items: center;
   gap: 32px;
 }
+.header__block_right button {
+  border: none;
+}
 .header__block_right img {
   background-color: rgb(34, 34, 36);
 }
@@ -65,7 +62,7 @@ button {
   border-width: 0 0 0 12px;
   border-color: #F16D7F;
   margin-left: 64px;
-  padding: 8px;
+  padding: 16px;
 }
 .main_section__text_decoration h2 {
   font-family: Lato;
@@ -89,6 +86,7 @@ button {
 
 .product-box {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
@@ -108,7 +106,8 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.item:nth-of-type(2) p {
+
+.item p {
   margin-bottom: 2px;
   font-family: Lato;
   font-size: 16px;
@@ -116,7 +115,8 @@ button {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-.item:nth-of-type(2) h2 {
+
+.item h2 {
   font-family: Lato;
   font-size: 24px;
   font-weight: 700;
@@ -206,7 +206,6 @@ button {
   line-height: 19px;
   padding: 15px 39px;
   margin: 48px auto 0;
-  border: 1px solid;
   border-color: #F16D7F;
   background: rgb(255, 255, 255);
 }
@@ -218,8 +217,6 @@ button {
 .boxes-of-advantages {
   background-color: rgb(34, 34, 36);
   padding: 104px 230px;
-  display: flex;
-  gap: 30px;
 }
 .boxes-of-advantages__box {
   width: 360px;
@@ -246,6 +243,7 @@ button {
   font-weight: 300;
   line-height: 17px;
   text-align: center;
+  padding: 0 25px;
 }
 
 .img_background {
@@ -270,8 +268,8 @@ button {
           clip-path: circle(33% at center 58px);
   margin-bottom: -25px;
 }
-.block2__box1 h6 {
-  color: black;
+.block2__box1 p {
+  color: rgb(34, 34, 34);
   font-family: Lato;
   font-style: italic;
   font-size: 20px;
@@ -319,6 +317,7 @@ button {
 }
 .block2__box2 button {
   background: #F16D7F;
+  border: none;
   border-radius: 0 100px 100px 0;
   color: rgb(255, 255, 255);
   font-family: Lato;
@@ -366,13 +365,6 @@ button {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
   }
-  .header {
-    padding: 0 32px;
-  }
-  .header__block_left {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
   .main_section img {
     width: 384px;
   }
@@ -390,19 +382,30 @@ button {
     font-size: 24px;
   }
   .product-box {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
   }
   .categories {
     margin-top: 20px;
   }
-  .item h2 {
-    text-align: center;
+  .items {
+    position: relative;
   }
-  .width_tablet {
+  .widthTablet {
     max-width: 232px;
+  }
+  .eclipse {
+    position: relative;
+  }
+  .eclipse__filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(33, 22, 22);
+    opacity: 0.7;
   }
   .title {
     margin-top: 154px;
@@ -412,9 +415,13 @@ button {
     margin-bottom: 72px;
   }
   .product {
-    width: 358px;
+    width: 352px;
+  }
+  .product__img {
+    width: 100%;
   }
   .product__text {
+    font-weight: 300;
     font-size: 14px;
     line-height: 17px;
   }
@@ -422,49 +429,50 @@ button {
     padding-bottom: 64px;
   }
   .hidden__btn_down {
-    padding: 15px 39px;
-    border: 1px solid #F16D7F;
-    background: rgb(255, 255, 255);
+    margin: 32px auto 0;
   }
   .boxes-of-advantages {
-    padding: 48px auto;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
+    padding: 48px 200px 64px;
   }
   .boxes-of-advantages__box {
-    width: 232px;
+    width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .img_background {
-    background-color: rgb(244, 244, 244);
-    opacity: 0.7;
+  .boxes-of-advantages__box img {
+    margin-bottom: 28px;
   }
-  .back_footer {
-    height: 612px;
+  .boxes-of-advantages__box h2 {
+    color: rgb(251, 251, 251);
+    font-family: Lato;
+    font-size: 19.96px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .boxes-of-advantages__box p {
+    color: rgb(251, 251, 251);
+    font-family: Lato;
+    font-size: 13.97px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 25px;
+  }
+  .img_background__back {
+    height: 638px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .block2 {
-    height: 614px;
     flex-flow: column wrap;
     gap: 48px;
   }
-  .block2__box1 {
-    flex-wrap: wrap;
-  }
-  .block2__box1 img {
-    -webkit-clip-path: circle(33% at center 58px);
-            clip-path: circle(33% at center 58px);
-    margin-bottom: -25px;
-  }
-  .block2__box2 h3 {
-    padding: 0 106px;
-  }
   .footer_navigation {
-    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 32px;
   }
 }/*# sourceMappingURL=style.css.map */

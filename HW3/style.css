@@ -99,6 +99,7 @@ button {
 .cart__product svg {
   margin-top: 28px;
   margin-right: 22px;
+  background: none;
 }
 .cart__description-box {
   margin: 22px 57px 62px 31px;

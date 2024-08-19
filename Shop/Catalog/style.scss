@@ -21,7 +21,7 @@ body {
 
 img {
    display: block;
-   max-width: 100%;
+   // max-width: 100%;
    cursor: pointer;
 }
 
@@ -118,7 +118,7 @@ button {
    box-sizing: border-box;
    position: relative;
    z-index: 10;
-   
+
 
    &__content {
       background-color: #fff;
@@ -323,6 +323,7 @@ button {
    &__current-page {
       color: $colorSelectSite;
    }
+
    &__color {
       color: rgb(196, 196, 196);
    }
@@ -575,17 +576,15 @@ button {
 .product-box {
    @include centerflex();
    gap: $gapGrid;
+   justify-content: start;
 }
 
 .categories {
    margin-top: 20px;
 }
 
-.item {
-
-   h2 {
-      text-align: center;
-   }
+.item h2 {
+   text-align: center;
 }
 
 
@@ -612,30 +611,12 @@ button {
 
 }
 
-.hidden {
-   padding-bottom: 64px;
-
-   &__btn_down {
-      padding: 15px 39px;
-      border: 1px solid $colorSelectSite;
-      background: rgb(255, 255, 255);
-   }
-
-}
 
 .boxes-of-advantages {
    padding: 48px auto;
    flex-direction: column;
    align-items: center;
-   gap: 48px;
 
-   &__box {
-      width: $thirdSite;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-   }
 }
 
 .img_background {
@@ -646,30 +627,32 @@ button {
 .back_footer {
    height: 612px;
    object-fit: cover;
+   max-width: 768px;
+
 }
 
 .block2 {
-   height: 614px;
    flex-flow: column wrap;
    gap: 48px;
 
 
    &__box1 {
-      flex-wrap: wrap;
 
       img {
-         clip-path: circle(33% at center 58px);
-         margin-bottom: -25px;
+         margin-bottom: -15px;
+      }
+
+      h6 {
+         font-size: 20px;
+         font-weight: 400;
+         line-height: 24px;
+         text-align: center;
       }
 
    }
 
-   &__box2 {
-
-      h3 {
-         padding: 0 106px;
-      }
-
+   &__box2 h3 {
+      padding: 0 204px;
    }
 }
 
