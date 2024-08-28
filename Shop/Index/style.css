@@ -268,7 +268,7 @@ a {
           clip-path: circle(33% at center 58px);
   margin-bottom: -25px;
 }
-.block2__box1 p {
+.block2__box1 h6 {
   color: rgb(34, 34, 34);
   font-family: Lato;
   font-style: italic;
@@ -580,7 +580,7 @@ a {
     flex-flow: column wrap;
     gap: 22px;
   }
-  .block2__box1 p {
+  .block2__box1 h6 {
     font-size: 18px;
     line-height: 22px;
     width: 343px;

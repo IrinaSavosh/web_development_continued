@@ -308,7 +308,7 @@ a {
          margin-bottom: -25px;
       }
 
-      p {
+      h6 {
          color: $colorText;
          font-family: Lato;
          font-style: italic;
@@ -605,7 +605,7 @@ a {
       padding-right: calc(50% - $widthSitePhone / 2);
    }
 
-    .hide {
+   .hide {
       display: none;
    }
 
@@ -692,11 +692,12 @@ a {
       padding-bottom: 40px;
    }
 
+
    .boxes-of-advantages {
       padding: 48px 12px 64px;
-      
+
       &__box {
-        
+
          img {
             margin-bottom: 28px;
          }
@@ -730,6 +731,8 @@ a {
       &__back {
          height: 638px;
          object-fit: cover;
+         // display: block;
+         //  max-width: 100%;
       }
    }
 
@@ -742,7 +745,7 @@ a {
       gap: 22px;
 
       &__box1 {
-         p {
+         h6 {
             font-size: 18px;
             line-height: 22px;
             width: 343px;
