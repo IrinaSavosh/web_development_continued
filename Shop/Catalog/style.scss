@@ -524,141 +524,173 @@ button {
 }
 
 @media (min-width: 376px) and (max-width: 768px) {
-   $widthSite: 736px;
-   $halfSite: 768px / 2;
-   $gapGrid: 20px;
-   $thirdSite: (
-      $widthSite - $gapGrid * 2) / 3;
 
    body {
       max-width: 768px;
    }
 
+
    .center {
-      padding-left: calc(50% - $widthSite / 2
-      );
-   padding-right: calc(50% - $widthSite / 2);
-}
-
-
-.header {
-   padding: 0 32px;
-
-   &__block_left {
-      margin-top: 16px;
-      margin-bottom: 16px;
-   }
-}
-
-.main_section {
-   img {
-      width: $halfSite;
+      padding-left: calc(50% - $widthSiteTablet / 2);
+      padding-right: calc(50% - $widthSiteTablet / 2);
    }
 
-   &__text_decoration {
-      width: $halfSite;
-      margin-left: 40px;
-
-      h2 {
-         font-size: 44px;
-      }
-
-      &__bold_type {
-         font-size: 24px;
-      }
-
-      &__select_text_color {
-         font-size: 24px;
-      }
-   }
-}
-
-.product-box {
-   @include centerflex();
-   gap: $gapGrid;
-   justify-content: start;
-}
-
-.categories {
-   margin-top: 20px;
-}
-
-.item h2 {
-   text-align: center;
-}
 
 
-.width_tablet {
-   max-width: 232px;
-}
 
-.title {
-   margin-top: 154px;
-   margin-bottom: 4px;
-}
+   .main_section {
 
-.description {
-   margin-bottom: 72px;
-}
-
-.product {
-   width: calc(736px /2 - $gapGrid / 2);
-
-   &__text {
-      font-size: 14px;
-      line-height: 17px;
-   }
-
-}
-
-
-.boxes-of-advantages {
-   padding: 48px auto;
-   flex-direction: column;
-   align-items: center;
-
-}
-
-// .img_background {
-//    background-color: rgb(244, 244, 244);
-//    opacity: 0.7;
-// }
-
-.back_footer {
-   height: 612px;
-   object-fit: cover;
-   max-width: 768px;
-
-}
-
-.block2 {
-   flex-flow: column wrap;
-   gap: 48px;
-
-
-   &__box1 {
 
       img {
-         margin-bottom: -15px;
+         width: $halfSiteTablet;
       }
 
-      h6 {
-         font-size: 20px;
-         font-weight: 400;
-         line-height: 24px;
-         text-align: center;
+      &__text_decoration {
+         width: $halfSiteTablet;
+
+         margin-left: 40px;
+
+         h2 {
+            font-size: 44px;
+         }
+
+         &__bold_type {
+            font-size: 24px;
+
+         }
+
+         &__select_text_color {
+            font-size: 24px;
+
+         }
+      }
+
+
+   }
+
+   .product-box {
+      gap: $gapGridTablet;
+   }
+
+
+
+
+   .categories {
+      margin-top: 20px;
+   }
+
+   .items {
+      position: relative;
+   }
+
+   .widthTablet {
+      max-width: 232px;
+   }
+
+
+   .eclipse {
+      position: relative;
+
+      &__filter {
+         width: 100%;
+         height: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: rgba(33, 22, 22);
+         opacity: 0.7;
+      }
+   }
+
+
+   .title {
+      margin-top: 154px;
+      margin-bottom: 4px;
+   }
+
+   .description {
+      margin-bottom: 72px;
+   }
+
+   .product {
+      width: $secondSiteTablet;
+
+      &__img {
+         width: 100%;
+
+      }
+
+      &__text {
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 17px;
       }
 
    }
 
-   &__box2 h3 {
-      padding: 0 204px;
-   }
-}
+   .hidden {
+      padding-bottom: 64px;
 
-.footer_navigation {
-   padding: 24px 32px;
-}
+      &__btn_down {
+         margin: 32px auto 0;
+      }
+   }
+
+   .boxes-of-advantages {
+      padding: 48px 204px 81px;
+
+
+      &__box {
+         width: $thirdSite;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+
+         img {
+            margin-bottom: 28px;
+         }
+
+         h2 {
+            color: rgb(251, 251, 251);
+            font-family: Lato;
+            font-size: 19.96px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 16px;
+         }
+
+         p {
+            color: rgb(251, 251, 251);
+            font-family: Lato;
+            font-size: 13.97px;
+            font-weight: 300;
+            line-height: 17px;
+            text-align: center;
+            padding: 0 25px;
+         }
+      }
+   }
+
+   .img_background {
+      &__back {
+         height: 638px;
+         object-fit: cover;
+      }
+   }
+
+   .block2 {
+      flex-flow: column wrap;
+      gap: 48px;
+   }
+
+   .footer_navigation {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 32px;
+   }
 }
 
 
