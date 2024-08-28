@@ -481,8 +481,8 @@ a {
     max-width: 375px;
   }
   .center {
-    padding-left: calc(50% - 171.5px);
-    padding-right: calc(50% - 171.5px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
   .hide {
     display: none;
@@ -511,7 +511,7 @@ a {
     margin-top: 64px;
   }
   .widthTablet {
-    max-width: 343px;
+    max-width: 360px;
   }
   .heightPhone {
     height: 112px;
@@ -539,7 +539,7 @@ a {
     margin-bottom: 64px;
   }
   .product {
-    max-width: 343px;
+    max-width: 360px;
   }
   .hidden {
     padding-bottom: 40px;
@@ -584,6 +584,7 @@ a {
     font-size: 18px;
     line-height: 22px;
     width: 343px;
+    text-align: center;
   }
   .block2__box2 h4 {
     font-size: 14px;

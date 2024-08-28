@@ -639,15 +639,9 @@ button {
    }
 
    .boxes-of-advantages {
-      padding: 48px 204px 81px;
-      flex-wrap: wrap;
+      padding: 48px 12px 64px;
 
       &__box {
-         width: $thirdSite;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-direction: column;
 
          img {
             margin-bottom: 28px;
@@ -672,24 +666,50 @@ button {
             padding: 0 25px;
          }
       }
+
+      margin: 0 0;
    }
+
+
 
    .img_background {
       &__back {
          height: 638px;
          object-fit: cover;
+         // display: block;
+         //  max-width: 100%;
       }
+   }
+
+   .item:nth-of-type(2) {
+      gap: 60px;
    }
 
    .block2 {
       flex-flow: column wrap;
-      gap: 48px;
+      gap: 22px;
+
+      &__box1 {
+         h6 {
+            font-size: 18px;
+            line-height: 22px;
+            width: 343px;
+            text-align: center;
+         }
+
+      }
+
+      &__box2 {
+         h4 {
+            font-size: 14px;
+         }
+      }
    }
 
    .footer_navigation {
-      display: flex;
-      justify-content: space-between;
-      padding: 30px 32px;
+      flex-direction: column-reverse;
+      padding: 40px 62px 8px;
+      gap: 40px;
    }
 }
 
@@ -712,7 +732,7 @@ button {
 
    body {
       max-width: 375px;
-   
+
    }
 
 
@@ -739,7 +759,7 @@ button {
 
    .filter-sort {
       gap: 60px;
-   
+
    }
 
    .filter {
@@ -898,16 +918,18 @@ button {
          height: 638px;
          object-fit: cover;
          display: block;
-          max-width: 100%;
+         max-width: 100%;
       }
 
-      
+
    }
+
    .back_footer {
       display: block;
       cursor: pointer;
       display: block;
-  }
+   }
+
    .item:nth-of-type(2) {
       gap: 60px;
    }
@@ -1150,16 +1172,18 @@ button {
          height: 638px;
          object-fit: cover;
          display: block;
-          max-width: 100%;
+         max-width: 100%;
       }
 
-      
+
    }
+
    .back_footer {
       display: block;
       cursor: pointer;
       display: block;
-  }
+   }
+
    .item:nth-of-type(2) {
       gap: 60px;
    }

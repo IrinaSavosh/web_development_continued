@@ -529,15 +529,8 @@ button {
     margin: 32px auto 0;
   }
   .boxes-of-advantages {
-    padding: 48px 204px 81px;
-    flex-wrap: wrap;
-  }
-  .boxes-of-advantages__box {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 48px 12px 64px;
+    margin: 0 0;
   }
   .boxes-of-advantages__box img {
     margin-bottom: 28px;
@@ -564,14 +557,26 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .item:nth-of-type(2) {
+    gap: 60px;
+  }
   .block2 {
     flex-flow: column wrap;
-    gap: 48px;
+    gap: 22px;
+  }
+  .block2__box1 h6 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 343px;
+    text-align: center;
+  }
+  .block2__box2 h4 {
+    font-size: 14px;
   }
   .footer_navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 32px;
+    flex-direction: column-reverse;
+    padding: 40px 62px 8px;
+    gap: 40px;
   }
 }
 @media (max-width: 375px) {
@@ -579,8 +584,8 @@ button {
     max-width: 375px;
   }
   .center {
-    padding-left: calc(50% - 171.5px);
-    padding-right: calc(50% - 171.5px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
   .hide {
     display: none;
@@ -645,7 +650,7 @@ button {
     margin-top: 64px;
   }
   .widthTablet {
-    max-width: 343px;
+    max-width: 360px;
   }
   .heightPhone {
     height: 112px;
@@ -673,7 +678,7 @@ button {
     margin-bottom: 64px;
   }
   .product {
-    max-width: 343px;
+    max-width: 360px;
   }
   .hidden {
     padding-bottom: 40px;
@@ -747,8 +752,8 @@ button {
     max-width: 375px;
   }
   .center {
-    padding-left: calc(50% - 171.5px);
-    padding-right: calc(50% - 171.5px);
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
   }
   .hide {
     display: none;
@@ -813,7 +818,7 @@ button {
     margin-top: 64px;
   }
   .widthTablet {
-    max-width: 343px;
+    max-width: 360px;
   }
   .heightPhone {
     height: 112px;
@@ -841,7 +846,7 @@ button {
     margin-bottom: 64px;
   }
   .product {
-    max-width: 343px;
+    max-width: 360px;
   }
   .hidden {
     padding-bottom: 40px;
